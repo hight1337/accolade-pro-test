@@ -1,0 +1,9 @@
+overwrite: true
+schema: https://snowtooth.moonhighway.com/
+documents: "src/**/*.{graphql,js,ts,jsx,tsx}"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
